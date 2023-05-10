@@ -20,6 +20,4 @@ find ./ -name luci-app-argon-config | xargs rm -rf;
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
-rm -rf feeds/small8/luci-app-adguardhome
 
-git clone https://github.com/10004909/luci-app-adguardhome.git package/net/luci-app-adguardhome
